@@ -1,0 +1,21 @@
+.bannerContainer h3 {
+    color: #FFF;
+    text-align: center;
+    margin-top: 24px;
+}
+.banner {
+    height: 40vh;
+    width: 100%;
+    background-image: url('/banner1.png');  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    border-bottom: 4px solid rgb(0,69,137);
+}
+.banner h1 {
+    color: #FFF ;
+}
