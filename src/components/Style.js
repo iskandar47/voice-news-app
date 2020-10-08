@@ -7,6 +7,14 @@ export default makeStyles({
         justifyContent: 'space-between',
         height: "100%"
     },
+    active: {
+      margin: 8,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      height: "100%",
+      borderBottom: "6px red solid"
+  },
     media: {
         height: 160,
     },

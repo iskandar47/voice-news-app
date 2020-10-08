@@ -12,6 +12,7 @@ const btnKey = 'bd428a5ffe6c64a5121631f1c1df87802e956eca572e1d8b807a3e2338fdd0dc
 function App() {
   const classes = useStyles()
   const [info, setInfo] = useState([])
+  const [activeCard, setActiveCard] = useState(-1)
   
   useEffect(()=>{
     
@@ -25,6 +26,9 @@ function App() {
           if(command === "goBack"){
             setInfo([])
           }
+          if(command === "active"){
+            setActiveCard((prevCard) => prevCard + 1)
+          }
       }
     })
   },[])
@@ -33,7 +37,7 @@ function App() {
         {info.length ===0 ? <Header/>: null}
       <Grid className={classes.container} container alignContent="center" alignItems="stretch">
 
-        <HomeCards art={info}/>
+        <HomeCards activeCard={activeCard} art={info}/>
       
       </Grid>
       <Footer/>

@@ -11,7 +11,7 @@ const infoCards = [
   ];
 
 
-function HomeCards({art}) {
+function HomeCards({art, activeCard}) {
     const classes = useStyles()
     if(!art.length){
         return(
@@ -48,7 +48,7 @@ function HomeCards({art}) {
         <Grid className={classes.container} container alignItems="stretch" justify="space-between" spacing={4}>
             {art.map((el, index)=>(
                 <Grid key={index} item xs={12} sm={6} md={4} lg={4} >
-                <NewsCard key={index} article={el}/>
+                <NewsCard key={index} i={index} activeCard={activeCard} article={el}/>
                 </Grid>
             ))}
         </Grid>
