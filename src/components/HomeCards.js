@@ -20,7 +20,7 @@ function HomeCards({art}) {
                 <Grid className={classes.container} style={{paddingTop: 0}} container alignItems="stretch" spacing={1}>
                     {infoCards.map((infoCard, index) => (
                         <Grid key={index} item xs={12} sm={12} md={6} lg={6} /* className={classes.infoCard} */>
-                            <Card className={classes.rootHomeCard} style={{backgroundColor: "rgba(0,74,135)"}}>
+                            <Card className={classes.rootHomeCard} style={{backgroundColor: "rgba(0,74,135, 0.1)"}}>
                             <CardContent>
                                 <Typography className={classes.title} color="textSecondary" gutterBottom>
                                     search by :

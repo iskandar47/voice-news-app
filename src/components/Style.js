@@ -43,7 +43,7 @@ export default makeStyles({
       },
       title: {
         fontSize: 14,
-        color: "rgb(0,36,70)"
+        color: "#888"
       },
       pos: {
         marginBottom: 12,

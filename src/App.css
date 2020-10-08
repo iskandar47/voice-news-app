@@ -1,10 +1,9 @@
 .App {
   text-align: center;
 }
-/* .App div h3 {
-  margin-top: 2rem ;
-}  */
+
 body {
+  /* background-image: url('/images/banner1.png'); */
   background: linear-gradient(133deg, rgba(2,0,36,1) 0%, rgba(0,36,70,1) 58%, rgba(0,138,182,1) 100%);
   font-family: 'Nunito Sans', sans-serif;
 }
