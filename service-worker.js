@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/voice-news-app/precache-manifest.824414560bce9f6fb7ff3b490d05b982.js"
+  "/voice-news-app/precache-manifest.cd8d1fbb2072496513a1637372b91241.js"
 );
 
 self.addEventListener('message', (event) => {

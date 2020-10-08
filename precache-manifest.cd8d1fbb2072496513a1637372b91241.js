@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "471a394c1576253af35f3203e5dfe510",
+    "revision": "b363b64e41b4f1ed55156562b277fea0",
     "url": "/voice-news-app/index.html"
   },
   {
-    "revision": "bd888fb0803e36506f7f",
+    "revision": "2037f05dc7f453a25edf",
     "url": "/voice-news-app/static/css/main.86a68be6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/voice-news-app/static/js/2.f51a7f52.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd888fb0803e36506f7f",
-    "url": "/voice-news-app/static/js/main.b903d0b8.chunk.js"
+    "revision": "2037f05dc7f453a25edf",
+    "url": "/voice-news-app/static/js/main.7f70d85f.chunk.js"
   },
   {
     "revision": "ff9fe928d1ff2ea4ed41",
