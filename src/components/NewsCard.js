@@ -1,13 +1,24 @@
-import React from 'react'
+import React, {useState, useEffect, createRef} from 'react'
 import {Card, CardActionArea, CardContent, CardMedia, Typography, Button, CardActions} from "@material-ui/core"
 import useStyles from "./Style.js"
-/* import classNames from 'classnames'; */
 
 function NewsCard({article, i, activeCard}) {
     const classes = useStyles()
+    const [elementRef, setElementRef] = useState([])
+    const scrollToRef  = (ref)=> window.scroll(0, ref.current.offsetTop - 80)
+    useEffect(()=>{
+        window.scroll(0,0)
+        setElementRef((refs)=>Array(20).fill().map((_, j)=> refs[j] || createRef()))
+    },[])
+    useEffect(()=>{
+        if(i === activeCard && elementRef[activeCard]){
+            scrollToRef(elementRef[activeCard])
+        }
+    }, [i, activeCard, elementRef])
+    
+    
     return (
-            <Card className={activeCard === i ? classes.active : classes.root}> 
-              {/* <Card className={classNames(classes.root, activeCard === i ? classes.activeCard : null)>  */} 
+            <Card ref={elementRef[i]} className={activeCard === i ? classes.active : classes.root}> 
             <CardActionArea>
                 <CardMedia
                 className={classes.media}

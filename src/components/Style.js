@@ -13,7 +13,9 @@ export default makeStyles({
       flexDirection: 'column',
       justifyContent: 'space-between',
       height: "100%",
-      borderBottom: "6px red solid"
+      borderBottom: "6px red solid",
+      transform: "scale(1.05)",
+      transition: "all 500ms linear",
   },
     media: {
         height: 160,

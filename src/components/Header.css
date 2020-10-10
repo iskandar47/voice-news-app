@@ -19,4 +19,7 @@
 }
 .banner h1 {
     color: #FFF ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
