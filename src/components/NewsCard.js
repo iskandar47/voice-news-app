@@ -34,11 +34,12 @@ function NewsCard({article, i, activeCard}) {
                 </CardContent>
                 
             </CardActionArea>
-            <CardActions>
+            <CardActions style={{position : "relative"}}>
 
                 <Button size="small" color="primary" href={article.url} target="_blank">
                  Learn More
                 </Button>
+                <div style={{position : "absolute", right: "10px"}}>{i + 1}</div>
             </CardActions>
         </Card>
     )

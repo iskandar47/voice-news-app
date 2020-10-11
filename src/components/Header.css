@@ -4,13 +4,12 @@
     margin-top: 24px;
 }
 .banner {
-    height: 20vh;
+    height: 30vh;
     width: 100%;
-    /* background-image: url('/images/banner1.png');  
+    background-image: url('./banner1.png'); 
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;  */
-    background-color: rgb(0,36,70);
+    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;

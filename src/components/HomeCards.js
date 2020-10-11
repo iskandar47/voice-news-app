@@ -6,7 +6,7 @@ import NewsCard from "./NewsCard.js"
 const infoCards = [
     { title: 'Latest News All', info: 'news from all over the world inculdes all categories from global sources', text: 'Give me the latest news or show me the global news ' },
     { title: 'News by Categories', info: 'Business, Entertainment, General, Health, Science, Sports, Technology', text: 'Give me the latest Technology news or what\'s the latest news about sports' },
-    { title: 'News by Terms', info: 'Bitcoin, PlayStation 5, Smartphones, Donald Trump...', text: 'What\'s up with apple or give me the news about Smartphones' },
+    { title: 'News by Terms', info: 'Bitcoin, PlayStation 5, Smartphones, Donald Trump...', text: 'tell me about apple or give me the news about Smartphones' },
     { title: 'News by Sources', info: 'CNN, Wired, BBC News, Time, IGN, Buzzfeed, ABC News...', text: 'Give me the news from CNN of show me the latest news from ABC News' },
   ];
 
@@ -43,7 +43,8 @@ function HomeCards({art, activeCard}) {
     return (
         <Grid>
         <Grid className={classes.header}>
-        <i className="fas fa-microphone"></i>  Try saying : Go back <i className="fas fa-arrow-left"></i>
+        To go back say <i className="fas fa-microphone"></i> : Go back <i className="fas fa-arrow-left"></i> <br/> 
+        To open specific article say <i className="fas fa-microphone"></i> : Open number /article number/ 
         </Grid>    
         <Grid className={classes.container} container alignItems="stretch" justify="space-between" spacing={4}>
             {art.map((el, index)=>(

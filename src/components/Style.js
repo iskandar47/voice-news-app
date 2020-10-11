@@ -35,6 +35,10 @@ export default makeStyles({
         textAlign: "center",
         zIndex: 5,
     },
+    cardNumber : {
+      marginLeft: "2rem",
+      textAlign : "right",
+    },
     
     rootHomeCard: {
         minWidth: 275,
@@ -58,4 +62,5 @@ export default makeStyles({
       pos: {
         marginBottom: 12,
       },
+      
 });
